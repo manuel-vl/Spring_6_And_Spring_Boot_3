@@ -1,0 +1,13 @@
+1. Crear en proyecto en Spring Inicializr, con las dependencias: Spring web, Lombok, DevTools y Thymeleaf
+
+3. Crear la carpeta: controllers
+
+4. Crear el controller: UserController
+
+5. Crear la carpeta: models
+
+6. Crear la clase: User
+
+7. Crear la carpeta: models/dto
+
+8. Crear la clase DTO: models/dto/UserDto

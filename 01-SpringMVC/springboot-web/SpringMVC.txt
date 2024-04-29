@@ -1,0 +1,6 @@
+Framework web basado en MVC, tomando ventaja de los siguientes principios:
+
+* Modelo, Vista y Controlador
+* Inyeccion de dependencias
+* Orientado al uso de Interfaces
+* Uso de clases POJO
