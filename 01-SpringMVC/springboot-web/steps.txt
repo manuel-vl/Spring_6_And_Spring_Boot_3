@@ -1,3 +1,10 @@
+DESTACADO:
+* Inyeccion de configuraciones definidas en properties, usando @Value(),
+  se pueden inyectar directamente, manipular con codigo de Java e incluso,
+  se puede inyectar objetos JSON
+* Creacion de clase tipo config e inyectar archivo con @PropertySources()
+* Otra forma de acceder a propiedades es utilizando Environment
+
 1. Crear en proyecto en Spring Inicializr, con las dependencias: Spring web, Lombok, DevTools y Thymeleaf
 
 3. Crear la carpeta: controllers
@@ -11,3 +18,7 @@
 7. Crear la carpeta: models/dto
 
 8. Crear la clase DTO: models/dto/UserDto
+
+9. Crear el archivo: resources/values.properties
+
+10. Crear la clase: ValuesConfig
