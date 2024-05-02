@@ -22,3 +22,10 @@ DESTACADO:
 9. Crear el archivo: resources/values.properties
 
 10. Crear la clase: ValuesConfig
+
+11. Para deployar: - Ejecutar: ./mvnw clean package (Para eliminar todo)
+                   - Ejecutar: ./mvnw package
+                   - Movernos al target: cd target
+                   - Levantar proyecto: java -jar ./springboot-web-0.0.1-SNAPSHOT.jar
+
+12.
