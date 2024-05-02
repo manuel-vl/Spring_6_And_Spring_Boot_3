@@ -1,11 +1,10 @@
-package com.manuelvl.curso.springboot.app.springbootweb.repositories;
+package com.manuelvl.curso.springboot.app.springbootweb.services;
 
 import com.manuelvl.curso.springboot.app.springbootweb.models.Product;
 
 import java.util.List;
 
-
-public interface IProductRepository {
+public interface IProductService {
     List<Product> findAll();
     Product findById(Long id);
 }
