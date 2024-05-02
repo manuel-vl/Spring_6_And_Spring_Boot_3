@@ -2,3 +2,18 @@ DESTACADO:
 * Inyeccion de
 
 1. Crear en proyecto en Spring Inicializr, con las dependencias: Spring web, Lombok, DevTools y Actuator
+
+2. Crear la carpeta: controllers
+
+3. Crear la carpeta: models
+
+4. Crear la carpeta: services
+
+5. Crear la carpeta: repositories
+
+6. Crear la clase:
+
+8. Crear la interfaz: IProductRepository
+
+7. Crear la clase: ProductRepository
+
