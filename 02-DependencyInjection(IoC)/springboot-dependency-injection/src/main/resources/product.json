@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "name": "Play 5",
+    "price": 1000
+  },
+  {
+    "id": 2,
+    "name": "Xbox One",
+    "price": 750
+  },
+  {
+    "id": 3,
+    "name": "Switch",
+    "price": 700
+  },
+  {
+    "id": 4,
+    "name": "Play 4",
+    "price": 600
+  }
+]
