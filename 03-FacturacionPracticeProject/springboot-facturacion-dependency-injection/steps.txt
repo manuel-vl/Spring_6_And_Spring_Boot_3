@@ -1,0 +1,43 @@
+DESTACADO:
+* Inyeccion de dependencias con @Autowired y con constructor
+* Importante la notacion de beans (componente) para el service y repository
+* Cuando tenemos 2 implementaciones de una misma interface y tiene por ejemplo @Repository, podemos agregarle a una de
+  las 2 @Primary para que lo tome como principal. Otra forma seria ir donde se hace la injeccion y agregar un
+  @Qualifier("product2Repository") con el nombre de la implementacion a usar.
+* @RequestScope Permite indicar que el alcance del scope es tipo request (Se crea la instancia por cada request)
+* @SessionScope Permite indicar que el alcance del scope es tipo session (Se crea la instancia y se sostiene hasta
+  que se cierre el navegador o termine la session)
+* @Bean Permite registrar un metodo como componente de Spring
+
+
+1. Crear en proyecto en Spring Inicializr, con las dependencias: Spring web, Lombok, DevTools y Actuator
+
+2. Crear la carpeta: controllers
+
+3. Crear la carpeta: models
+
+4. Crear la carpeta: services
+
+5. Crear la carpeta: repositories
+
+6. Crear la clase:
+
+7. Crear la interfaz: IProductRepository
+
+8. Crear la clase: ProductRepository
+
+9. Crear la interfaz: IProductService
+
+10. Crear la clase: ProductService
+
+11. Crear la clase: ProductController
+
+12. Crear la clase: Product2Repository
+
+13. Crear el archivo: resources/config.properties
+
+14. Crear la clase: ValuesConfig
+
+15. Crear el archivo JSON: resources/product.json
+
+16. Crear la clase: ProductRepositoryJson
