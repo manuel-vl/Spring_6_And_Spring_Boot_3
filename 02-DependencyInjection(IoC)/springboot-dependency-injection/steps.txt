@@ -20,7 +20,7 @@ DESTACADO:
 
 5. Crear la carpeta: repositories
 
-6. Crear la clase:
+6. Crear la clase: Product
 
 7. Crear la interfaz: IProductRepository
 

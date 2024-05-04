@@ -1,13 +1,12 @@
 DESTACADO:
 * Inyeccion de dependencias con @Autowired y con constructor
-* Importante la notacion de beans (componente) para el service y repository
-* Cuando tenemos 2 implementaciones de una misma interface y tiene por ejemplo @Repository, podemos agregarle a una de
-  las 2 @Primary para que lo tome como principal. Otra forma seria ir donde se hace la injeccion y agregar un
-  @Qualifier("product2Repository") con el nombre de la implementacion a usar.
-* @RequestScope Permite indicar que el alcance del scope es tipo request (Se crea la instancia por cada request)
-* @SessionScope Permite indicar que el alcance del scope es tipo session (Se crea la instancia y se sostiene hasta
-  que se cierre el navegador o termine la session)
-* @Bean Permite registrar un metodo como componente de Spring
+* Importante la notacion de beans (componente) es singleton. @Bean Permite registrar un metodo como componente de Spring
+* Cuando tenemos 2 beans que retorna el mismo tipo de dato, debemos especificar @Primary donde se crean los beans
+  o @Qualifier donde estamos haciendo la injeccion.
+* @PostConstructor Se ejecuta luego de la construccion. A diferencia del constructor, aca si tenemos acceso a los datos
+  INYECTADOS
+* @PreDestroy Se ejecuta antes de destruir el componente bean (Podemos eliminar datos, cerrar archivo, cerrar recursos, etc)
+* @JsonIgnoreProperties Permite ignorar algunos errores (No recomendable)
 
 
 1. Crear en proyecto en Spring Inicializr, con las dependencias: Spring web, Lombok, DevTools y Actuator
@@ -20,24 +19,16 @@ DESTACADO:
 
 5. Crear la carpeta: repositories
 
-6. Crear la clase:
+6. Crear la clase: Client
 
-7. Crear la interfaz: IProductRepository
+7. Crear la clase: Product
 
-8. Crear la clase: ProductRepository
+8. Crear la clase: ItemInvoice
 
-9. Crear la interfaz: IProductService
+9. Crear la clase: Invoice
 
-10. Crear la clase: ProductService
+10. Crear el archivo: resources/data.properties
 
-11. Crear la clase: ProductController
+11. Crear la clase: AppConfig
 
-12. Crear la clase: Product2Repository
-
-13. Crear el archivo: resources/config.properties
-
-14. Crear la clase: ValuesConfig
-
-15. Crear el archivo JSON: resources/product.json
-
-16. Crear la clase: ProductRepositoryJson
+12. Crear el controller: controllers/InvoiceController
