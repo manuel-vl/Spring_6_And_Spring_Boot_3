@@ -1,0 +1,7 @@
+DESTACADO:
+*
+
+
+1. Crear en proyecto en Spring Inicializr, con las dependencias: Spring web, Lombok, DevTools y Actuator
+
+2. Crear la carpeta: controllers
