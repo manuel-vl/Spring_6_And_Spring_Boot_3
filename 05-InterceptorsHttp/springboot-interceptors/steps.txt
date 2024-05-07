@@ -1,0 +1,16 @@
+DESTACADO:
+* Creamos el interceptor (LoadingTimeInterceptor) y sobrescribimos los metodos pre y post
+* Registramos el interceptor para las rutas del controlador
+
+
+1. Crear en proyecto en Spring Inicializr, con las dependencias: Spring web, Lombok, DevTools y Actuator
+
+2. Crear la carpeta: controllers
+
+3. Crear la carpeta: interceptors
+
+4. Crear el archivo: interceptors/LoadingTimeInterceptor
+
+5. Crear el archivo: AppConfig
+
+6. Crear el controller: controllers/AppController
