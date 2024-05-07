@@ -9,6 +9,9 @@ import org.springframework.web.bind.annotation.RestController;
 public class AppController {
     @GetMapping("")
     public String index(){
+        // int value=100/0;
+        //int value=Integer.parseInt("1000");
+        //System.out.println(value);
         return "ok 200";
     }
 }

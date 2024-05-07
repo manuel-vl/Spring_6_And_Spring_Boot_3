@@ -1,7 +1,32 @@
 DESTACADO:
-*
+* Crear Controller Error handler para manejar todas las Excepciones personalizadas
+* Dentro de cada funcion debemos notar con @ExceptionHandler(ExcepcionNombre.class)
+* Crear las excepciones personalizadas que extiendas de RuntimeException
+* En los servicios lanzar mediante un new throw NombreExcepcion(Mensaje)
 
 
 1. Crear en proyecto en Spring Inicializr, con las dependencias: Spring web, Lombok, DevTools y Actuator
 
 2. Crear la carpeta: controllers
+
+3. Crear el controller: controllers/AppController
+
+4. Crear la carpeta: models
+
+5. Crear la clase Error: models/Error
+
+6. Crear el controller: ErrorHandlerExceptionController
+
+-- Algo mas practico con la realidad
+
+7. Crear la clase User: models/User
+
+8. Crear la carpeta: services
+
+9. Crear la interfaz: services/IUserService
+
+10. Crear la clase: services/UserService
+
+11. Crear el controller: controllers/UserController
+
+12. Crear la carpeta: Exceptions
