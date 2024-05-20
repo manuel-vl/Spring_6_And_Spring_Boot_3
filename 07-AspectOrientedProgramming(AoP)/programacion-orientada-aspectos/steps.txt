@@ -1,26 +1,40 @@
 DESTACADO:
-* Creamos el interceptor (CalendarInterceptor) implementar HandlerInterceptor y sobrescribimos los metodos pre y post
-* Registramos el interceptor implementar WebMvcConfigurer para las rutas del controlador y sobrescribir AddInterceptors
+* Luego de tener listo el serice y controller, procedemos a crear la clase Aspect. Para esto debemos agregar las
+  dependencias:
+  <dependency>
+  	    <groupId>org.springframework.boot</groupId>
+  	    <artifactId>spring-boot-starter-aop</artifactId>
+  </dependency>
+  Luego podemos crear nuestra clase Aspect: GreetingAspect.
+* Las notaciones que tenemos a disposicion son:
+  @Before -> Se ejecuta antes de la ejecucion del metodo
+  @After -> Se ejecuta despues de la ejecucion del metodo
+  @AfterReturning -> Se ejecuta despues de que el metodo retorne algo
+  @AfterThrowing -> Se ejecuta luego de que se lanza una excepcion dentro del metodo
+  @Around -> Se ejecuta antes de la ejecucion del metodo y permite acceder a la respuesta que retorna el metodo
+ * Agregar @Order(numero) permite establecer el orden de ejecucion de los aspectos. El numero mas bajo indica que se
+   ejecutara primero.
+ * Podemos crear una funcion con la notacion @Pointcut para reutilizarla en varios aspectos y no tener que escribir
+   siempre el metodo, clase o package a interceptar.
 
 
 1. Crear en proyecto en Spring Inicializr, con las dependencias: Spring web, Lombok, DevTools y Actuator
 
 2. Crear la carpeta: controllers
 
-3. Crear la carpeta: interceptors
+3. Crear la carpeta: services
 
-4. Crear el controller: controllers/AppController
+4. Crear la carpeta: aop
 
-5. Modificar el archivo: resources/application.properties
+5. Crear el archivo: controllers/GreetingController
 
-6. Crear el archivo: interceptors/CalendarInterceptor
+6. Crear el archivo: services/IGreetingService
 
-7. Crear el archivo: AppConfig
+7. Crear el archivo: services/GreetingService
 
+8. Crear el archivo: aop/GreetingAspect
 
+9. Crear el archivo: aop/FooAspect
 
-4. Crear el archivo: interceptors/LoadingTimeInterceptor
+10. Crear el archivo: aop/GreetingServicePointcuts
 
-5. Crear el archivo: AppConfig
-
-6. Crear el controller: controllers/AppController
