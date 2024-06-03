@@ -6,6 +6,8 @@ DESTACADO:
     - @Id: Indica el campo que es la clave primaria
     - @GeneratedValue: Indica que el valor de la clave primaria es generado automáticamente
     - @Column: Indica el nombre de la columna en la base de datos
+* Cada entidad tiene un repositorio, que es una interfaz que extiende de JpaRepository, y que nos permite
+  realizar operaciones CRUD en la base de datos de forma sencilla.
 
 1. Crear en proyecto en Spring Inicializr, con las dependencias: Spring web, Lombok, DevTools,
    MySQL Driver, Spring Data JPA
@@ -14,22 +16,22 @@ DESTACADO:
 
 3. Crear la entidad: entities/Person
 
-3. Crear la carpeta: controllers
+4. Crear la carpeta: repositories
 
-4. Crear la carpeta: services
+5. Crear la interfaz: repositories/IPersonRepository
 
+6. Crear la carpeta: services
 
-4. Crear la carpeta: aop
+7. Crear la interfaz: services/IPersonService
 
-5. Crear el archivo: controllers/GreetingController
+8. Crear la clase: services/PersonService
 
-6. Crear el archivo: services/IGreetingService
+9. Crear la carpeta: controllers
 
-7. Crear el archivo: services/GreetingService
+10. Crear la clase: controllers/PersonController
 
-8. Crear el archivo: aop/GreetingAspect
+-- Configuración de la base de datos --
 
-9. Crear el archivo: aop/FooAspect
+11. Crear la base de datos en MySQL: CREATE DATABASE db_users_springboot;
 
-10. Crear el archivo: aop/GreetingServicePointcuts
-
+12. Configurar el archivo application.properties con los datos de la base de datos
