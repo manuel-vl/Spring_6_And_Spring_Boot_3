@@ -1,0 +1,35 @@
+DESTACADO:
+*  Las tablas y se basan en entidades, tipo clase que gracias al ORM se mapea a una tabla en la base de datos,
+   las notaciones mas comunes son:
+    - @Entity: Indica que la clase es una entidad
+    - @Table: Indica el nombre de la tabla en la base de datos
+    - @Id: Indica el campo que es la clave primaria
+    - @GeneratedValue: Indica que el valor de la clave primaria es generado automáticamente
+    - @Column: Indica el nombre de la columna en la base de datos
+
+1. Crear en proyecto en Spring Inicializr, con las dependencias: Spring web, Lombok, DevTools,
+   MySQL Driver, Spring Data JPA
+
+2. Crear la carpeta: entities
+
+3. Crear la entidad: entities/Person
+
+3. Crear la carpeta: controllers
+
+4. Crear la carpeta: services
+
+
+4. Crear la carpeta: aop
+
+5. Crear el archivo: controllers/GreetingController
+
+6. Crear el archivo: services/IGreetingService
+
+7. Crear el archivo: services/GreetingService
+
+8. Crear el archivo: aop/GreetingAspect
+
+9. Crear el archivo: aop/FooAspect
+
+10. Crear el archivo: aop/GreetingServicePointcuts
+

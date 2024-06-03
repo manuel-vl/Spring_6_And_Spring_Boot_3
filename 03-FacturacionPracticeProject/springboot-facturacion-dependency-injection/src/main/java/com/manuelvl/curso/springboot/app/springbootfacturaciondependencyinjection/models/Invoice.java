@@ -38,7 +38,8 @@ public class Invoice {
     @Qualifier("itemsOffice")
     List<ItemInvoice> itemInvoices;
 
-    // Se ejecuta luego de la construccion. A diferencia del constructor, aca si tenemos acceso a los datos INYECTADOS
+    // Se ejecuta luego de la construccion. A diferencia del constructor,
+    // aca si tenemos acceso a los datos INYECTADOS
     @PostConstruct
     public void init(){
         System.out.println("Creando el componente de la factura");

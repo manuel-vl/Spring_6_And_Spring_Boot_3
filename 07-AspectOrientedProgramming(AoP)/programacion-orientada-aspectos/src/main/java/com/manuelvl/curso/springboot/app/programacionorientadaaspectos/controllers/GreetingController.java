@@ -17,7 +17,7 @@ public class GreetingController {
 
     @GetMapping("/greeting")
     public ResponseEntity<?> greeting(){
-        return ResponseEntity.ok(Collections.singletonMap("greeting", greetingService.sayHello("Manu", "Como vas?")));
+        return ResponseEntity.ok(Collections.singletonMap("greeting", greetingService.sayHello("Manu", "Como vas??")));
     }
 
     @GetMapping("/greeting-error")

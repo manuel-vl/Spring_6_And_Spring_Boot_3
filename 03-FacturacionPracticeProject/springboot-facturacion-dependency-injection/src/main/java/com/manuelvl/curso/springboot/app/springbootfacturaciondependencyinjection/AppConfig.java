@@ -17,7 +17,6 @@ import java.util.List;
 })
 public class AppConfig {
     // Registramos los metodo como componente de Spring
-
     @Bean
     List<ItemInvoice> itemsAdventure(){
         Product p1=new Product("Camara", 1200d);
