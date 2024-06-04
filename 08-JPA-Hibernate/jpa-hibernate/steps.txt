@@ -8,6 +8,12 @@ DESTACADO:
     - @Column: Indica el nombre de la columna en la base de datos
 * Cada entidad tiene un repositorio, que es una interfaz que extiende de JpaRepository, y que nos permite
   realizar operaciones CRUD en la base de datos de forma sencilla.
+* Importante crear la database a utilizar y agregar los valores en el application.properties
+* En el repository podemos crear funciones con nombres personalizados, por ejemplo, si queremos buscar
+  una persona por su nombre y su edad, podemos crear una función llamada findByNameAndLastname, y Spring
+  Data JPA se encargará de generar la consulta SQL automáticamente.
+ * Tambien podemos crear funciones y agregar la consulta con @Query
+
 
 1. Crear en proyecto en Spring Inicializr, con las dependencias: Spring web, Lombok, DevTools,
    MySQL Driver, Spring Data JPA
@@ -32,6 +38,16 @@ DESTACADO:
 
 -- Configuración de la base de datos --
 
-11. Crear la base de datos en MySQL: CREATE DATABASE db_users_springboot;
+11. Crear la base de datos en MySQL: CREATE DATABASE db_springboot;
 
 12. Configurar el archivo application.properties con los datos de la base de datos
+
+--
+
+13. Crear la carpeta: exceptions
+
+14. Crear la clase: exceptions/GlobalExceptionHandler
+
+15. Crear la excepcion: exceptions/NotFoundException
+
+14. Crear el DTO: GenericResponseDTO
