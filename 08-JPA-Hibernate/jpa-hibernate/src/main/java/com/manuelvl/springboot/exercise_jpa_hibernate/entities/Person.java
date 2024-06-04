@@ -4,6 +4,7 @@ import jakarta.persistence.*;
 import lombok.*;
 import lombok.experimental.FieldDefaults;
 
+
 @Entity
 @Table(name="persons")
 @Getter
@@ -24,4 +25,8 @@ public class Person {
 
     @Column(name = "programming_language")
     String programmingLanguage;
+
+    // Embedded -> Se utiliza para incluir una clase en otra clase
+    @Embedded
+    Audit audit=new Audit();
 }
